@@ -74,6 +74,7 @@ export const SubjectResponse = styled.div`
       width: 6px;
       height: 6px;
       border-radius: 100%;
+      margin-right: 6px;
     }
   }
   > p:first-of-type {

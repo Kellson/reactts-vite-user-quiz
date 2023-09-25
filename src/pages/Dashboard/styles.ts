@@ -6,6 +6,7 @@ export const Container = styled.div`
   min-width: 100vw;
   min-height: 100vh;
   background-color: #fff;
+  position: relative;
   @media (min-width: 900px) {
     flex-direction: row;
     background-color: var(--primary);
@@ -14,15 +15,19 @@ export const Container = styled.div`
 
 export const LeftContainer = styled.div`
   display: none;
+  z-index: 2;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 100px;
   padding: 10px;
+  position: fixed;
+  height: 100vh;
   box-sizing: border-box;
   @media (min-width: 900px) {
     width: initial;
     display: flex;
+    background-color: var(--primary);
     > div:first-of-type {
       > img {
         width: 60px;
@@ -65,6 +70,7 @@ export const LeftContainer = styled.div`
 
 export const BodyContent = styled.div`
   display: flex;
+  overflow: auto;
   background-color: #fff;
   width: 100%;
   padding: 40px;
@@ -73,9 +79,10 @@ export const BodyContent = styled.div`
   padding-bottom: 100px;
   box-sizing: border-box;
   @media (min-width: 900px) {
-    padding-bottom: 0px;
+    padding-bottom: 40px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+    margin-left: 84px;
   }
 `;
 
