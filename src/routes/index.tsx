@@ -1,4 +1,9 @@
-import { BrowserRouter, Route, Routes as Switch } from "react-router-dom";
+import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes as Switch,
+} from "react-router-dom";
 import { RotasEnum } from "../common/utils/rotas";
 import { DashboardPage } from "../pages/Dashboard";
 import HomePage from "../pages/Home";
@@ -13,6 +18,7 @@ const Routes = () => {
           <Route path={RotasEnum.home} element={<HomePage />} />
           <Route path={RotasEnum.quiz} element={<QuizPage />} />
           <Route path={RotasEnum.ranking} element={<RankingPage />} />
+          <Route path="/*" element={<Navigate to={RotasEnum.home} />} />
         </Route>
       </Switch>
     </BrowserRouter>
