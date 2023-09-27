@@ -33,6 +33,15 @@ h3 {
   font-size: 1.8rem;
 }
 
+p {
+  font-size: 1.4rem;
+}
+
+th,
+td {
+  font-size: 1.4rem;
+}
+
 body,
 html,
 #root {

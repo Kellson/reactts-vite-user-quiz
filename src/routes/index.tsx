@@ -3,7 +3,7 @@ import { RotasEnum } from "../common/utils/rotas";
 import { DashboardPage } from "../pages/Dashboard";
 import HomePage from "../pages/Home";
 import QuizPage from "../pages/Quiz";
-import VirtualRoomsPage from "../pages/VirtualRooms";
+import RankingPage from "../pages/Ranking";
 
 const Routes = () => {
   return (
@@ -12,7 +12,7 @@ const Routes = () => {
         <Route element={<DashboardPage />}>
           <Route path={RotasEnum.home} element={<HomePage />} />
           <Route path={RotasEnum.quiz} element={<QuizPage />} />
-          <Route path={RotasEnum.virtualRooms} element={<VirtualRoomsPage />} />
+          <Route path={RotasEnum.ranking} element={<RankingPage />} />
         </Route>
       </Switch>
     </BrowserRouter>

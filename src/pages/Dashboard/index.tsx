@@ -1,6 +1,6 @@
-import GroupsIcon from "@mui/icons-material/Groups";
 import HomeIcon from "@mui/icons-material/Home";
 import QuizIcon from "@mui/icons-material/Quiz";
+import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import Logoreact from "../../assets/images/logo-react.svg";
 import { RotasEnum } from "../../common/utils/rotas";
@@ -33,11 +33,11 @@ export const DashboardPage = () => {
         <QuizIcon />
       </NavbarButton>
       <NavbarButton
-        onClick={() => navigate(RotasEnum.virtualRooms)}
-        activePath={location.pathname === RotasEnum.virtualRooms}
+        onClick={() => navigate(RotasEnum.ranking)}
+        activePath={location.pathname === RotasEnum.ranking}
         type="button"
       >
-        <GroupsIcon />
+        <TrendingUpIcon />
       </NavbarButton>
     </div>
   );

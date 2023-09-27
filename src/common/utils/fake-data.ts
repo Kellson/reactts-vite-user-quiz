@@ -20,7 +20,14 @@ export interface IQuizConfig {
   questions: IQuestion[];
 }
 
+interface IRankingUser {
+  id: number;
+  name: string;
+  ok: number;
+}
+
 interface IFakeData {
+  ranking: IRankingUser[];
   quiz: {
     math: IQuizConfig[];
     portuguese: IQuizConfig[];
@@ -34,6 +41,83 @@ interface IFakeData {
 }
 
 export const fakeData: IFakeData = {
+  ranking: [
+    {
+      id: 1,
+      name: "Nome 1",
+      ok: 50,
+    },
+    {
+      id: 2,
+      name: "Nome 2",
+      ok: 49,
+    },
+    {
+      id: 3,
+      name: "Nome 3",
+      ok: 51,
+    },
+    {
+      id: 4,
+      name: "Nome 4",
+      ok: 101,
+    },
+    {
+      id: 5,
+      name: "Nome 5",
+      ok: 100,
+    },
+    {
+      id: 6,
+      name: "Nome 6",
+      ok: 27,
+    },
+    {
+      id: 7,
+      name: "Nome 7",
+      ok: 88,
+    },
+    {
+      id: 8,
+      name: "Nome 8",
+      ok: 30,
+    },
+    {
+      id: 9,
+      name: "Nome 9",
+      ok: 63,
+    },
+    {
+      id: 10,
+      name: "Nome 10",
+      ok: 135,
+    },
+    {
+      id: 11,
+      name: "Nome 11",
+      ok: 56,
+    },
+    {
+      id: 12,
+      name: "Nome 12",
+      ok: 29,
+    },
+    {
+      id: 13,
+      name: "Nome 13",
+      ok: 99,
+    },
+    {
+      id: 14,
+      name: "Nome 14",
+      ok: 91,
+    },
+    {
+      id: 15,
+      name: "Nome 15",
+      ok: 75,
+    },
+  ],
   quiz: {
     math: [
       {
