@@ -82,7 +82,7 @@ export const BodyContent = styled.div`
     padding-bottom: 40px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    margin-left: 84px;
+    margin-left: 80px;
   }
 `;
 
